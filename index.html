@@ -4,140 +4,85 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulário</title>
-<style>
-        body{
-        width: auto;
-        height: 100vh;
-        display: flex;
-        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-        }
+    <title>formulario</title>
 
-        .container_main{
-        
-        background-color: rgb(0, 157, 255);
-        width: 353px;
-        height: 400px;
-        max-width: 450px;
-        max-height: 420px;
-        margin-left: auto;
-        margin-right: auto;
-        border-radius: 5px;
-        }
+    <style>
 
-        .titulo{
-        font-size: 1.3rem;
-        padding-left: 12px;
-        color: aliceblue;
-        }
+.seja_socio {
+  width: 360px;
+  padding: 8% 0 0;
+  margin: auto;
+}
+.formulario {
+  position: relative;
+  z-index: 1;
+  background: rgb(78, 145, 245);
+  max-width: 360px;
+  padding: 45px;
+  text-align: center;
+}
+.formulario input {
+  font-family: "Roboto", sans-serif;
+  background: #f2f2f2;
+  width: 100%;
+  border: 0;
+  margin: 0 0 15px;
+  padding: 15px;
+  box-sizing: border-box;
+  font-size: 14px;
+  border-radius: 5px;
+}
+.formulario button {
+  font-family: Arial, Helvetica, sans-serif;
+  text-transform: uppercase;
+  background: #fa0202;
+  width: 45%;
+  border: 0;
+  padding: 10px;
+  color: #FFFFFF;
+  font-size: 14px;  
+  transition: all 0.3 ease;
+  cursor: pointer;
+  border-radius: 5px;
+  float: right;
+}
+.formulario button:hover{
+    background-color: white;
+    color: red;
+    font-size: 14px;
+    border-bottom: #fa0202;
+    width: 45%;
+}
 
-        .container{
-        display: flex;
-        flex-direction: column;
-        padding: 5px;
-        margin: 2px;
-        border-radius: 2px;
-        
-        }
-
-
-        .hidden{
-            border: 0;
-            clip: rect(0,0,0,0);
-            height: 1px;
-            margin: -1px;
-            overflow: hidden;
-            padding: 0;
-            position: absolute;
-            width: 1px;
-        }
-    
-        .formulario_nome, .email, .formulario_celular, .formulario_telFixo, .formulario_telFixo  {
-            font-size: 1.1rem;
-            width: 300px;
-            border-radius: 5px;
-            margin: 8px;
-            padding: 10px;
-            border: 0px;
-        }
-
-        .botao{
-            align-self: flex-end;
-            padding-right: 12px;
-        }
-
-        #botao{
-            background-color: red;
-            font-size: 1.2rem;
-            color: white;
-            padding: 10px;
-            margin-top: 10px;
-            border: 0px;
-            border-radius: 4px;
-            
-        }
-</style>
+body {
+   background-color: black;
+   font-family: "Roboto", sans-serif;
+}
+.titulo{
+    color: white;
+    margin: 2px;
+    float: left;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: none;
+}
+    </style>
 </head>
 <body>
-<div class="container_main">
-    <div class="container">
-        <h1 class="titulo">Seja Sócio </h1>
+    <div class="seja_socio">
+        
         <div class="formulario">
-            <label class="hidden" for="nomeCompleto">Nome completo</label>
-            <input 
-            class="formulario_nome"
-            type="text" 
-            name="nome_completo"
-            id="nome_completo"
-            placeholder="Nome Completo"
-        ></div>
-        <div class="formulario_email">
-            <label class="hidden" for="email">E-mail</label>
-            <input 
-            class="email"
-            type="text" 
-            name="email"
-            id="email"
-            placeholder="E-mail"
-        ></div>
-         
-        <div class="formulario_cel">
-            <label class="hidden" for="celular">Celular</label>
-            <input 
-            class="formulario_celular"
-            type="text" 
-            name="celular"
-            id="celular"
-            placeholder="Celular"
-        ></div>
-        <div class="formulario_fixo">
-            <label class="hidden" for="telefoneFixo">Nome completo</label>
-            <input 
-            class="formulario_telFixo"
-            type="text" 
-            name="fixo"
-            id="fixo"
-            placeholder="Telefone fixo"
-        ></div>
-        <div class="formulario_endereco">
-            <label class="hidden" for="endereço">Nome completo</label>
-            <input 
-            class="formulario_telFixo"
-            type="text" 
-            name="endereço"
-            id="endereço"
-            placeholder="Endereço completo"
-        ></div>
-        <div class="botao">
-            <input 
-            type="button"
-            value="Inscreva-se"
-            name="botao"
-            id="botao"
-            >
+          </form>
+          <form class="Seja Socio">
+            <h1 class="titulo">Seja Sócio</h1>
+            <input type="text" placeholder="Nome Completo"/>            
+            <input type="email" placeholder="E-mail"/>
+            <input type="celular" placeholder="Celular:"/>
+            <input type="tel" placeholder="Telefone Fixo:"/>
+            <input type="endereco" placeholder="Endereço Completo:"/>            
+            <button>inscreve-se</button>
+          </form>
         </div>
-    </div>
+      </div>
     
-</div>
 </body>
 </html>
